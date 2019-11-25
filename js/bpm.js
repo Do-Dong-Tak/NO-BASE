@@ -4,7 +4,10 @@ $(function() {
 	interval = 60000 / bpm;
 
 // BPM 지정
-	function setTempo() {window.clearInterval(intervalId);}
+	function setTempo(){
+		window.clearInterval(intervalId);
+		// intervalId = window.setInterval(playarea, interval);
+	}
 
 // BPM 증가
 	$('.bpm_up').click(function() {
