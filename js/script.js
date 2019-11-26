@@ -3,6 +3,8 @@ var Project_filename = [];   //프로젝트 파일이름을 저장하는 변수
 var Project_number = 0;      //데이터 개수 변수
 project_name = [];           //프로젝트 명을 저장하는 변수
 var Now_project_number = 0;  //현재 프로젝트 번호
+var bpm = 16;                //16박자 
+var musicNum = 4;            //악기개수
 
 $(document).ready(function () {
 
@@ -143,9 +145,9 @@ function view_project(){
 function check_ckeckbox(){
     for(let i = Project_number; i < Project_number+1; i++){ 
         Project_save[i];
-        for(let j = 0; j < 4; j++){
+        for(let j = 0; j < musicNum; j++){
             Project_save[i] = [];
-            for(let k = 0; k < 16; k++){
+            for(let k = 0; k < bpm; k++){
                 Project_save[i][j] = [];
                 if($(`input:checkbox[id='crash_${k}']`).prop("checked") && j == 0){
                     Project_save[i][j][k] = 1;

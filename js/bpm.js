@@ -20,6 +20,9 @@ $(function() {
 				setTempo();
 			}
 		}
+		$('.play').css({opacity:"1", cursor:"pointer"});       //추가
+		$('.temp_pause').css({opacity:"0.5", cursor:"unset"}); //추가
+		Start = false; 										   //추가
 	});
 
 //BPM 감소
@@ -33,5 +36,8 @@ $(function() {
 				setTempo();
 			}
 		}
+		$('.play').css({opacity:"1", cursor:"pointer"});       //추가
+		$('.temp_pause').css({opacity:"0.5", cursor:"unset"}); //추가
+		Start = false; 	
 	});
 });
