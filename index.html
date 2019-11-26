@@ -188,14 +188,78 @@
 							<label><input type="checkbox" id="kick_13"><span></span></label>
 							<label><input type="checkbox" id="kick_14"><span></span></label>
 							<label><input type="checkbox" id="kick_15"><span></span></label>
+						</div><br></br>
+
+						<!-- 기타 palm-mute -->
+						<div class="box" guitar="palm">
+							<img src="img/kick.png" alt="palm">
+							<label><input type="checkbox" id="palm_0"><span></span></label>
+							<label><input type="checkbox" id="palm_1"><span></span></label>
+							<label><input type="checkbox" id="palm_2"><span></span></label>
+							<label><input type="checkbox" id="palm_3"><span></span></label>
+							<label><input type="checkbox" id="palm_4"><span></span></label>
+							<label><input type="checkbox" id="palm_5"><span></span></label>
+							<label><input type="checkbox" id="palm_6"><span></span></label>
+							<label><input type="checkbox" id="palm_7"><span></span></label>
+							<label><input type="checkbox" id="palm_8"><span></span></label>
+							<label><input type="checkbox" id="palm_9"><span></span></label>
+							<label><input type="checkbox" id="palm_10"><span></span></label>
+							<label><input type="checkbox" id="palm_11"><span></span></label>
+							<label><input type="checkbox" id="palm_12"><span></span></label>
+							<label><input type="checkbox" id="palm_13"><span></span></label>
+							<label><input type="checkbox" id="palm_14"><span></span></label>
+							<label><input type="checkbox" id="palm_15"><span></span></label>
+						</div><br>
+
+						<!-- 기타 Drive -->
+						<div class="box" guitar="drive">
+							<img src="img/kick.png" alt="drive">
+							<label><input type="checkbox" id="drive_0"><span></span></label>
+							<label><input type="checkbox" id="drive_1"><span></span></label>
+							<label><input type="checkbox" id="drive_2"><span></span></label>
+							<label><input type="checkbox" id="drive_3"><span></span></label>
+							<label><input type="checkbox" id="drive_4"><span></span></label>
+							<label><input type="checkbox" id="drive_5"><span></span></label>
+							<label><input type="checkbox" id="drive_6"><span></span></label>
+							<label><input type="checkbox" id="drive_7"><span></span></label>
+							<label><input type="checkbox" id="drive_8"><span></span></label>
+							<label><input type="checkbox" id="drive_9"><span></span></label>
+							<label><input type="checkbox" id="drive_10"><span></span></label>
+							<label><input type="checkbox" id="drive_11"><span></span></label>
+							<label><input type="checkbox" id="drive_12"><span></span></label>
+							<label><input type="checkbox" id="drive_13"><span></span></label>
+							<label><input type="checkbox" id="drive_14"><span></span></label>
+							<label><input type="checkbox" id="drive_15"><span></span></label>
 						</div><br>
 					</div>
 				</div>
             
-            <audio id="Drum-crash" preload="auto"><source src="mp3/Crash.mp3" type="audio/mp3"></audio>
-            <audio id="Drum-hihat" preload="auto"><source src="mp3/Hi-Hat-Closed.mp3" type="audio/mp3"></audio>
-            <audio id="Drum-kick" preload="auto"><source src="mp3/Kick.mp3" type="audio/mp3"></audio>
-            <audio id="Drum-snare" preload="auto"><source src="mp3/Snare.mp3" type="audio/mp3"></audio>
+            <!-- Drum 사운드 -->
+            <audio id="Drum-crash" preload="auto"><source src="mp3/drum/Crash.mp3" type="audio/mp3"></audio>
+            <audio id="Drum-hihat" preload="auto"><source src="mp3/drum/Hi-Hat.mp3" type="audio/mp3"></audio>
+            <audio id="Drum-kick" preload="auto"><source src="mp3/drum/Kick.mp3" type="audio/mp3"></audio>
+            <audio id="Drum-snare" preload="auto"><source src="mp3/drum/Snare.mp3" type="audio/mp3"></audio>
+
+            <!-- Guitar 사운드 (아직 사운드 없음) -->
+        <!--
+            * 팜 뮤트 사운드
+            <audio id="palm-F5" preload="auto"><source src="mp3/guitar/palm/palm-F5.mp3" type="audio/mp3"></audio>
+            <audio id="palm-E5" preload="auto"><source src="mp3/guitar/palm/palm-E5.mp3" type="audio/mp3"></audio>
+            <audio id="palm-A5" preload="auto"><source src="mp3/guitar/palm/palm-A5.mp3" type="audio/mp3"></audio>
+            <audio id="palm-D5" preload="auto"><source src="mp3/guitar/palm/palm-D5.mp3" type="audio/mp3"></audio>
+            <audio id="palm-G5" preload="auto"><source src="mp3/guitar/palm/palm-G5.mp3" type="audio/mp3"></audio>
+            <audio id="palm-B5" preload="auto"><source src="mp3/guitar/palm/palm-B5.mp3" type="audio/mp3"></audio>
+            <audio id="palm-C5" preload="auto"><source src="mp3/guitar/palm/palm-C5.mp3" type="audio/mp3"></audio>
+
+			* 드라이브 사운드
+            <audio id="drive-F5" preload="auto"><source src="mp3/guitar/drive/drive-F5.mp3" type="audio/mp3"></audio>
+            <audio id="drive-E5" preload="auto"><source src="mp3/guitar/drive/drive-E5.mp3" type="audio/mp3"></audio>
+            <audio id="drive-A5" preload="auto"><source src="mp3/guitar/drive/drive-A5.mp3" type="audio/mp3"></audio>
+            <audio id="drive-D5" preload="auto"><source src="mp3/guitar/drive/drive-D5.mp3" type="audio/mp3"></audio>
+            <audio id="drive-G5" preload="auto"><source src="mp3/guitar/drive/drive-G5.mp3" type="audio/mp3"></audio>
+            <audio id="drive-B5" preload="auto"><source src="mp3/guitar/drive/drive-B5.mp3" type="audio/mp3"></audio>
+            <audio id="drive-C5" preload="auto"><source src="mp3/guitar/drive/drive-C5.mp3" type="audio/mp3"></audio>
+        -->
         </div>
         <div class="sidebar">
     
@@ -203,7 +267,7 @@
     </div>
     
 </body>
-<script src="./js/jquery-1.12.4.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/TweenMax-1.17.0.min.js"></script>
 <script src="./js/bpm.js"></script>
