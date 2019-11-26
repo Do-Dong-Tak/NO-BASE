@@ -6,8 +6,8 @@ var Now_project_number = 0;  //현재 프로젝트 번호
 
 $(document).ready(function () {
 
-    $(".midnight").fadeIn("slow");
-    $(".first_popup").fadeIn("slow");
+    // $(".midnight").fadeIn("slow");
+    // $(".first_popup").fadeIn("slow");
 
 
     $(".bpm").hover(function () {

@@ -17,7 +17,6 @@ $(function() {
 	hiHatClosedAudio = $('#Drum-hihat');
 
 
-
 	// 변수 지정 (심벌)
 	var crashtl = new TimelineMax({paused: true});
 	crashtl.to(crash, 0.1, {rotation: 8, transformOrigin: "50% 50%"})
@@ -77,4 +76,7 @@ $(function() {
 		hiHatClosedAudioEl.currentTime = 0;
 		hiHatClosedAudioEl.play();
 	};
+
+// 여기서부터 Guitar (Palm-mute / Drive 구성해야 함)
+
 });
