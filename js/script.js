@@ -5,6 +5,11 @@ project_name = [];           //프로젝트 명을 저장하는 변수
 var Now_project_number = 0;  //현재 프로젝트 번호
 
 $(document).ready(function () {
+
+    $(".midnight").fadeIn("slow");
+    $(".first_popup").fadeIn("slow");
+
+
     $(".bpm").hover(function () {
         $(".bpm_up").show();
         $(".bpm_down").show();

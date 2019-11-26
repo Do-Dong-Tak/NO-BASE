@@ -390,3 +390,37 @@ i
     width: 5%;
     height: 100%;
 }
+
+/*첫 페이지*/
+.first_popup
+{
+    position: relative;
+    width: 800px;
+    height: 480px;
+    background-color: rgb(35, 35, 35);
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.3);
+    padding: 50px;
+    
+}
+.first_popup > *
+{
+    float: left;
+}
+.center-line
+{
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.first_popup h1,.first_popup h3
+{
+    text-align: center;
+    color: white;
+}
