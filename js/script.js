@@ -19,29 +19,43 @@ $(document).ready(function () {
         $(".bpm_up").hide();
         $(".bpm_down").hide();
     });
-
-    $("#new-project").hover(function () {
+    //첫 시작 팝업 관련
+    $("#new-project").hover(function () {   //새 프로젝트 만들기
         $("#new-project > img").attr("src","./img/new-project-selected.png");
         $("#new-project").css({"background-color":"white","color":"black"});
     },function () {
         $("#new-project > img").attr("src","./img/new-project.png");
         $("#new-project").css({"background-color":"transparent","color":"white"});
     });
-    $("#open-project").hover(function () {
+    $("#open-project").hover(function () {  //프로젝트 열기
         $("#open-project > img").attr("src","./img/open-project-selected.png");
         $("#open-project").css({"background-color":"white","color":"black"});
     },function () {
         $("#open-project > img").attr("src","./img/open-project.png");
         $("#open-project").css({"background-color":"transparent","color":"white"});
     });
-    $("#open-demo").hover(function () {
+    $("#open-demo").hover(function () {     //데모 프로젝트 보기
         $("#open-demo > img").attr("src","./img/demo-open-selected.png");
         $("#open-demo").css({"background-color":"white","color":"black"});
     },function () {
         $("#open-demo > img").attr("src","./img/demo-open.png");
         $("#open-demo").css({"background-color":"transparent","color":"white"});
     });
+    $("#open-guide").hover(function () {       //사용 가이드 보기
+        $("#open-guide > img").attr("src","./img/guide-selected.png");
+        $("#open-guide").css({"background-color":"white","color":"black"});
+    },function () {
+        $("#open-guide > img").attr("src","./img/guide.png");
+        $("#open-guide").css({"background-color":"transparent","color":"white"});
+    });
+    //여기까지
 });
+
+function new_project_first()    //첫 화면에서 새 프로젝트 만들기 눌렀을때
+{
+    $(".midnight").fadeOut("fast");
+    $(".first_popup").fadeOut("fast");
+}
 
 
 $(`.view_project`).click(function(){
@@ -157,9 +171,12 @@ function change_project_name_func()
 }
 
 //프로젝트 보는 창 추가 함수
-function view_project(){
-    $(".midnight").fadeIn("fast");
-    $(".view_project").fadeIn("fast");
+function open_project(){
+    // $(".midnight").fadeIn("fast");
+    // $(".view_project").fadeIn("fast");
+    //파일 저장방식으로 바꿀예정이니 주석 처리
+
+    //로컬 PC로부터 파일을 불러오기위한 파일 선택 다이얼로그를 표시하는 소스코드 추가 하기
 }
 
 //체크 확인 함수

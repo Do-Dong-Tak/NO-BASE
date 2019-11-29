@@ -21,10 +21,10 @@
 					</div>
 				
 						<div class="right-side">
-							<span id="new-project"><img width="50px" src="./img/new-project.png" alt="new-project"><i>새 프로젝트</i></span>
-							<span id="open-project"> <img width="50px" src="./img/open-project.png" alt="open-project"> <i>프로젝트 열기</i></span>
+							<span id="new-project"	onclick="new_project_first();"><img width="50px" src="./img/new-project.png" alt="new-project"><i>새 프로젝트</i></span>
+							<span id="open-project" onclick="open_project();"> <img width="50px" src="./img/open-project.png" alt="open-project"> <i>프로젝트 열기</i></span>
 							<span id="open-demo"> <img width="50px" src="./img/demo-open.png" alt="open-demo"> <i>데모 프로젝트 보기</i></span>
-							<span id="open-demo"> <img width="50px" src="./img/demo-open.png" alt="open-demo"> <i>데모 프로젝트 보기</i></span>
+							<span id="open-guide"> <img width="50px" src="./img/guide.png" alt="open-guide"> <i>사용 가이드 보기</i></span>
 						</div>							
 			
     	</div>
@@ -66,12 +66,8 @@
 		</div>
 	</div>
     <header>
-        <div class="title">
-            C'exy Dobal Project
-        </div>
-        <div class="saved">
-            Unsaved
-		</div>
+        <div class="title">New Project</div>
+        <div class="saved">Unsaved</div>
 		<div class="overflow">
 			<div class="status">
 				<div class="temp_pause"></div>
@@ -103,7 +99,7 @@
 		<span onclick="new_project();">새 프로젝트</span>
 		<span onclick="save_project();">저장</span>
 		<span onclick="change_project_name();">프로젝트 명 변경</span>
-		<span onclick="view_project();">프로젝트 보기/불러오기</span>
+		<span onclick="open_project();">프로젝트 열기</span>
 		<span onclick="info();">정보</span>
 	</div>
 	<div class="menu_btn" onclick="open_menu();"></div>  
