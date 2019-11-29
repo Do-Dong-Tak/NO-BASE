@@ -8,8 +8,8 @@ var musicNum = 4;            //악기개수
 
 $(document).ready(function () {
 
-    // $(".midnight").fadeIn("slow");
-    // $(".first_popup").fadeIn("slow");
+    $(".midnight").fadeIn("slow");
+    $(".first_popup").fadeIn("slow");
 
 
     $(".bpm").hover(function () {
@@ -18,6 +18,28 @@ $(document).ready(function () {
     },function() {
         $(".bpm_up").hide();
         $(".bpm_down").hide();
+    });
+
+    $("#new-project").hover(function () {
+        $("#new-project > img").attr("src","./img/new-project-selected.png");
+        $("#new-project").css({"background-color":"white","color":"black"});
+    },function () {
+        $("#new-project > img").attr("src","./img/new-project.png");
+        $("#new-project").css({"background-color":"transparent","color":"white"});
+    });
+    $("#open-project").hover(function () {
+        $("#open-project > img").attr("src","./img/open-project-selected.png");
+        $("#open-project").css({"background-color":"white","color":"black"});
+    },function () {
+        $("#open-project > img").attr("src","./img/open-project.png");
+        $("#open-project").css({"background-color":"transparent","color":"white"});
+    });
+    $("#open-demo").hover(function () {
+        $("#open-demo > img").attr("src","./img/demo-open-selected.png");
+        $("#open-demo").css({"background-color":"white","color":"black"});
+    },function () {
+        $("#open-demo > img").attr("src","./img/demo-open.png");
+        $("#open-demo").css({"background-color":"transparent","color":"white"});
     });
 });
 

@@ -26,7 +26,8 @@ header
     padding: 15px;
     z-index: 998;
     padding-right: 50px;
-    overflow:auto;
+    /* overflow:auto; */
+    overflow: hidden;
 }
 header *
 {
@@ -51,7 +52,7 @@ header *
     background-color: #fff;
     width: 200px;
     height: 220px;
-    margin-top: 35px;
+    margin-top: 55px;
     right: 10px;
     border-radius: 5px;
     overflow: hidden;
@@ -117,7 +118,7 @@ header *
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 5px;
-    height: 25px;
+    height: 50px;
 }
 .bpm > img
 {
@@ -403,25 +404,60 @@ i
     top:50%;
     transform: translate(-50%,-50%);
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.3);
-    padding: 50px;
+    /* padding: 50px; */
+    overflow: hidden;
     
 }
-.first_popup > *
+.left-side
+{
+    background-image: url("../img/start_background.jpg"); 
+    position: relative;
+    width: 50%;
+    height: 800px;
+    background-position-x: 50%;
+    float: left;
+}
+.start_darkness
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.65;
+}
+.first-logo
+{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.right-side
+{
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.right-side span
+{
+    display: block;
+    width: 100%;
+    height: 80px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+.right-side span > *
 {
     float: left;
 }
-.center-line
-{
-    position: absolute;
-    width: 1px;
-    height: 80%;
-    background-color: white;
-    left: 50%;
-    transform: translateX(-50%);
-
-}
-.first_popup h1,.first_popup h3
-{
-    text-align: center;
-    color: white;
+.right-side i{
+    margin-left: 20px;
+    font-size: 15pt;
+    transform: translateY(7px);
+    
 }

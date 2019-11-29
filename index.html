@@ -13,18 +13,20 @@
 
 		<!-- 첫 페이지 -->
     	<div class="first_popup">
-    		<div class="left-side">
-    			<img src="./img/bpm.png" alt="logo">    <!--로고 삽입-->
-    			<h1>Do-Dung-Tak</h1>	<!--프로그램 명-->
-    			<h3>make your own BEAT★</h3><!--부제목-->
-    		</div>
-    		<div class="center-line"></div>	<!--경계선-->
-    		<div class="right-side">
-    			<span>새 프로젝트</span>
-    			<span>프로젝트 열기</span>
-    		</div>
-    			
-
+					<div class="left-side">
+						<div class="start_darkness">
+							<img src="./img/logo.png" width="150px" alt="first-logo" class="first-logo">
+							<!--첫 페이지 옆에 추가적으로 꾸미고 싶은 요소 있음 여기에 추가-->
+						</div>
+					</div>
+				
+						<div class="right-side">
+							<span id="new-project"><img width="50px" src="./img/new-project.png" alt="new-project"><i>새 프로젝트</i></span>
+							<span id="open-project"> <img width="50px" src="./img/open-project.png" alt="open-project"> <i>프로젝트 열기</i></span>
+							<span id="open-demo"> <img width="50px" src="./img/demo-open.png" alt="open-demo"> <i>데모 프로젝트 보기</i></span>
+							<span id="open-demo"> <img width="50px" src="./img/demo-open.png" alt="open-demo"> <i>데모 프로젝트 보기</i></span>
+						</div>							
+			
     	</div>
     	<!-- 여기까지 -->
 
@@ -69,22 +71,18 @@
         </div>
         <div class="saved">
             Unsaved
-        </div>
-        <div class="status">
-            <div class="temp_pause"></div>
-            <div class="play"></div>
-            <div class="pause"></div>
-        </div>
+		</div>
+		<div class="overflow">
+			<div class="status">
+				<div class="temp_pause"></div>
+				<div class="play"></div>
+				<div class="pause"></div>
+			</div>
+		</div>
         <div class="metronome">
 
 		</div>       
-		<div class="popup_menu">
-			<span onclick="new_project();">새 프로젝트</span>
-			<span onclick="save_project();">저장</span>
-			<span onclick="change_project_name();">프로젝트 명 변경</span>
-			<span onclick="view_project();">프로젝트 보기/불러오기</span>
-			<span onclick="info();">정보</span>
-		</div>
+		
         <div class="rythem">
                 <span>1</span>
                 <span>2</span>
@@ -101,6 +99,13 @@
             </div>
 		</div>     
 	</header>
+	<div class="popup_menu">
+		<span onclick="new_project();">새 프로젝트</span>
+		<span onclick="save_project();">저장</span>
+		<span onclick="change_project_name();">프로젝트 명 변경</span>
+		<span onclick="view_project();">프로젝트 보기/불러오기</span>
+		<span onclick="info();">정보</span>
+	</div>
 	<div class="menu_btn" onclick="open_menu();"></div>  
 
 
